@@ -18,17 +18,18 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <parent>
-        <groupId>com.springboot.cloud</groupId>
-        <artifactId>common</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
     <dependencies>
         <dependency>
             <groupId>com.springboot.cloud</groupId>
             <artifactId>core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--使用 lombok 简化 Java 代码-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
         </dependency>
         <!--spring web相关包-->
         <dependency>
